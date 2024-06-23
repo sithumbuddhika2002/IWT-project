@@ -1,0 +1,286 @@
+
+
+/* Home Page CSS */
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  /* font-family: sans-serif; */
+  overflow: hidden;
+  
+}
+
+.header img{
+    display: inline-block;
+    width: 4.5%;
+    border: 5px solid #336797;
+    border-radius: 20%;
+    float: left;
+}
+
+.header{
+
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12%;
+    padding: 10px 30px;
+    background: linear-gradient(#28537a, #1582d6, #35bee0) ;
+    display: inline-block;
+    text-align: center;
+    z-index: 10;
+    
+}
+
+.navbar a{
+    position: relative;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    float: left;
+    margin-top: 35px;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.navbar a::before{
+
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: .3s;
+    
+}
+
+.navbar a:hover::before{
+
+    width: 100%;
+}
+
+/* Login Reg Buttons */
+
+#register {
+  background: #0a95ff;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5px;
+    float: right;
+}
+
+#register:hover{
+  background: #0074cc;
+  color: white;
+  border: 2px solid #1b5996;
+  border-radius: 10px;
+}
+
+#login {
+  background: #e1ecf4;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #6291b3;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  border-radius: 10px;
+    margin-top: 30px;
+    float: right;
+}
+
+#login:hover{
+  background: #b3d3ea;
+  color: #6291b3;
+  border: 2px solid #1b5996;
+  border-radius: 10px;
+}
+
+
+
+/* Headtext */
+
+
+
+footer{
+  
+  width: 100%;
+  height: 7%;
+  position: absolute;
+  background: linear-gradient(#1676be, #28537a) ;;
+  bottom: 0;
+}
+
+.footxt{
+  left: 7%;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 14px;
+  color: wheat;
+  position: absolute;
+}
+
+a.help{
+
+  margin-left: 1300px;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: wheat;
+  position: relative;
+}
+
+/* Overall layout styling for rows and columns */
+
+.row {
+  margin-left: 10px; /* Adds left margin to the row */
+  margin-top: 100px; /* Adds top margin to the row */
+  display: flex;
+  height: 88%;
+  align-items: center; /* Aligns items along the cross-axis (vertical alignment) */
+}
+
+.col {
+  flex-basis: 50%; /* Sets the initial size of the flex item (column) to 50% */
+}
+
+/* Styling for the main heading (h1) */
+
+h1 {
+  margin-left: 20px; /* Adds left margin to the heading */
+  color: #0bb2ff; /* Sets the text color */
+  font-size: 100px; /* Sets the font size */
+}
+
+/* Styling for paragraph 1 (p1) */
+
+.p1 {
+  margin-left: 25px; /* Adds left margin to the paragraph */
+  color: #d8f3ff; /* Sets the text color */
+  font-size: 20px; /* Sets the font size */
+}
+
+/* Styling for general paragraphs (p) */
+
+p {
+  text-align: center; /* Aligns text to the center */
+  margin-top: 10%; /* Adds top margin to the paragraph */
+  color: #cff1ff; /* Sets the text color */
+  font-size: 20px; /* Sets the font size */
+  line-height: 20px; /* Sets the line height (space between lines) */
+}
+
+/* Styling for the card containers */
+
+.card {
+  margin-left: 30px; /* Adds left margin to the card */
+  width: 250px; /* Sets the width of the card */
+  height: 280px; /* Sets the height of the card */
+  display: inline-block;
+  border-radius: 10px; /* Adds border-radius for rounded corners */
+  padding: 30px 21px; /* Adds padding inside the card */
+  box-sizing: border-box; /* Includes padding and border in the total width/height */
+  cursor: pointer;
+  background-position: center; /* Sets the background position to the center */
+  background-size: cover; /* Ensures the background image covers the entire card */
+  transition: transform 0.5s; /* Adds a smooth transition effect to the transform property */
+  opacity: 1; /* Sets initial opacity of the card */
+}
+
+/* Background images for different cards */
+
+.card1 {
+  background-image: url(v1.jpg);
+}
+
+.card2 {
+  background-image: url(v9.jpg);
+}
+
+.card3 {
+  background-image: url(v3.jpeg);
+}
+
+.card4 {
+  background-image: url(v12.jpeg);
+}
+
+.card5 {
+  background-image: url(v6.jpg);
+}
+
+.card6 {
+  background-image: url(v13.png);
+}
+
+/* Hover effect on cards */
+
+.card:hover {
+  transform: translateY(-10px); /* Moves the card upwards on hover */
+  opacity: 1; /* Maintains opacity on hover */
+}
+
+/* Styling for the caption inside the card (h5) */
+
+h5 {
+  color: #fff; /* Sets the text color */
+  text-align: center; /* Aligns text to the center */
+  margin-left: 5%; /* Adds left margin to the caption */
+  text-shadow: 0 0 5px #666666; /* Adds a subtle text shadow for better visibility */
+  font-size: 20px; /* Sets the font size */
+}
+
+/* Styling for the body (background) */
+
+body {
+  width: 100%; /* Sets the width of the body to 100% */
+  height: 100vh; /* Sets the height of the body to 100% of the viewport height */
+  background-image: linear-gradient(rgba(196, 196, 196, 0.7), rgba(32, 229, 255, 0.7)), url(back2.jpg); /* Sets a background image with a linear gradient overlay */
+  background-position: center; /* Sets the background position to the center */
+  background-size: cover; /* Ensures the background image covers the entire body */
+}

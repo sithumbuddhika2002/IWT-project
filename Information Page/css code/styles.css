@@ -1,0 +1,228 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(214, 214, 214, 0.7),rgba(214, 214, 214, 0.7)),url(back3.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.header img {
+    display: inline-block;
+    width: 4.5%;
+    border: 5px solid #336797;
+    border-radius: 20%;
+    float: left;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12%;
+    padding: 10px 30px;
+    background: linear-gradient(#28537a, #1582d6, #35bee0);
+    display: inline-block;
+    text-align: center;
+    z-index: 10;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    float: left;
+    margin-top: 35px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.navbar a::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: white;
+        transition: .3s;
+    }
+
+    .navbar a:hover::before {
+        width: 100%;
+    }
+
+/* Login Reg Buttons */
+#register,
+#login {
+    background: #0a95ff;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5px;
+    float: right;
+}
+
+    #register:hover,
+    #login:hover {
+        background: #0074cc;
+        color: white;
+        border: 2px solid #1b5996;
+        border-radius: 10px;
+    }
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    height: 7%;
+    position: absolute;
+    background: linear-gradient(#1676be, #28537a);
+    bottom: 0;
+}
+
+p.footxt {
+    left: 7%;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 14px;
+    color: wheat;
+    position: absolute;
+}
+
+a.help {
+    margin-left: 1300px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+    position: relative;
+}
+
+/* Content Styles */
+.vaccination-title{
+    font-family: sans-serif;
+}
+.content {
+    padding-top: 150px; /* Added padding to move content below the header */
+    text-align: center;
+}
+
+.vaccination-buttons {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
+
+}
+
+.vaccination-category {
+    margin-top: 100px;
+    text-align: center;
+    margin: 0 10px; /* Add margin between the buttons */
+}
+
+.vaccination-button {
+    width: 120px;
+    height: 70px;
+    background:#403dff;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 20px 20px;
+    margin-top: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.1s;
+    position: relative;
+    text-align: center;
+}
+
+.vaccination-button::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%,rgba(255,94,247,1)17.8%,rgba(2,245,255,1)100.2%);
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.vaccination-button:active{
+    transform: scale(0.9)rotate(3deg);
+    background: radial-gradient(circle farthest-corner at 10% 20%,rgba(255,94,247,1)17.8%,rgba(2,245,255,1)100.2%);
+    transition: 0.5s;
+}
+.vaccination-button:hover {
+        background-color: #0074cc;
+    }
+
+.vaccination-info {
+
+    text-align: center;
+    margin-top: 30px;
+}
+
+.vaccination-image-info {
+    display: none;
+}
+
+
+.vaccination-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#vaccination-image {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    display: none;
+}
+
+.vaccination-details {
+    font-family: monospace;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Added a style for the image */
+#vaccination-image {
+    width: 450px;
+    height: 300px;
+    margin-top: 75px;
+}
+
+.backimg{
+    background-image: url(back3.jpg);
+}
